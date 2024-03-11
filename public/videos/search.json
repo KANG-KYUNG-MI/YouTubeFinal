@@ -1,5 +1,4 @@
-{
-  "kind": "youtube#searchListResponse",
+{ "kind": "youtube#searchListResponse",
   "etag": "KJaF0_8ioyxQlvUBPj4SfxTuV7U",
   "nextPageToken": "CBkQAA",
   "regionCode": "KR",
@@ -7,7 +6,14 @@
     "totalResults": 1000000,
     "resultsPerPage": 25
   },
+
+
+
+
+
+
   "items": [
+
     {
       "kind": "youtube#searchResult",
       "etag": "sLCOefK0WLy2mPq9tumkpnNOjVA",
@@ -42,6 +48,13 @@
         "publishTime": "2022-09-24T11:30:05Z"
       }
     },
+
+
+
+
+
+
+
     {
       "kind": "youtube#searchResult",
       "etag": "JXvNUyqCr1dsDul2c9Z1oJhO-hQ",
@@ -76,6 +89,7 @@
         "publishTime": "2022-09-23T14:38:06Z"
       }
     },
+    
     {
       "kind": "youtube#searchResult",
       "etag": "yteWjK0XHj2lht_OqEfGI3-pq00",
@@ -110,6 +124,7 @@
         "publishTime": "2022-09-23T13:40:20Z"
       }
     },
+    
     {
       "kind": "youtube#searchResult",
       "etag": "BIEhp-00sfG0HabrdNAj83L5bYM",
@@ -144,6 +159,7 @@
         "publishTime": "2022-09-23T13:57:34Z"
       }
     },
+    
     {
       "kind": "youtube#searchResult",
       "etag": "0TAGfPgdMc6n8zlJxeXJ-wM6CBw",

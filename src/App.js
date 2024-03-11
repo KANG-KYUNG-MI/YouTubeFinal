@@ -1,21 +1,23 @@
-import { Outlet } from 'react-router-dom';
-import SearchHeader from './components/SearchHeader';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { YoutubeApiProvider } from './context/YoutubeApiContext';
 
-const queryClient = new QueryClient();
+import { Outlet } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { YouTubeApiProvider } from './context/YouTubeApiContext';
+
+const queryClient=new QueryClient();
 
 function App() {
-  return (
-    <>
-      <SearchHeader />
-      <YoutubeApiProvider>
-        <QueryClientProvider client={queryClient}>
-          <Outlet />
-        </QueryClientProvider>
-      </YoutubeApiProvider>
-    </>
-  );
+  return(
+  <>
+  <Navbar/>
+  
+  <YouTubeApiProvider>
+    <QueryClientProvider client={queryClient}>
+      <Outlet/>
+    </QueryClientProvider>
+  </YouTubeApiProvider>
+  </>
+  )
 }
 
 export default App;
