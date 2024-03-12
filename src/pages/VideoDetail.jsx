@@ -10,7 +10,7 @@ export default function VideoDetail() {
 
     return (
     <section className='flex flex-col lg:flex-row'>
-      <article className='basis-4/6'>
+      <article className='ml-5  mt-2 basis-4/6'>
          <iframe id="player" type="text/html" width="100%" height="640" 
          src={`http://www.youtube.com/embed/${video.id}`} frameborder="0"
          title='title'/>
@@ -22,7 +22,7 @@ export default function VideoDetail() {
          </div>
       </article>
 
-   <section className='basis-2/6'>
+   <section className='mr-5 basis-2/6'>
     < RelatedVideos/>
    </section>
         </section>
