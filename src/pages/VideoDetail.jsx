@@ -11,21 +11,21 @@ export default function VideoDetail() {
 
     return (
     <section className='flex flex-col lg:flex-row'>
-      <article className='ml-5  mt-2 basis-4/6'>
+      <article className=' basis-4/6'>
          <iframe 
          id="player" type="text/html" width="100%" height="640" 
          src={`http://www.youtube.com/embed/${video.id}`} frameborder="0"
          title='title'
          />
 
-         <div className='p-8'>
+         <div className='mt-2 mb-5'>
            <h2 className='font-bold'>{title}</h2>
            <ChannelInfo id={channelId} name={channelTitle}/>
            <pre className='whitespace-pre-wrap'>{description}</pre>
          </div>
       </article>
 
-   <section className='ml-3 mr-5 basis-2/6'>
+   <section className='ml-2 basis-2/6'>
     < RelatedVideos/>
    </section>
         </section>

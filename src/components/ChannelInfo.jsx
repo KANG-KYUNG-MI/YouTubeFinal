@@ -2,7 +2,7 @@ import React from 'react';
 import { useYouTubeApi } from './../context/YouTubeApiContext';
 import { useQuery } from '@tanstack/react-query';
 
-//id={channelId} name={channelTitle} from videos (search)
+//id={channelId} name={channelTitle} from videosdetail ( useLocation-{state:{video}}-video.snippet)
 export default function ChannelInfo({id, name}) {
  
      const { youTube} = useYouTubeApi();
@@ -15,12 +15,10 @@ export default function ChannelInfo({id, name}) {
 
     //   async channelImageURL(id){
     //     return  this.apiClient.getChannels(
-    //       {params:{
-    //                part:'snippet',
+    //       {params:{part:'snippet',
     //                id:id                       
     //               }})//
-    //               .then((res)=>res.data.items[0].snippet.thumbnails.default.url)
-    //                }
+    //    .then((res)=>res.data.items[0].snippet.thumbnails.default.url) }
 
     return (
         <div className='flex my-4 mb-8 items-center'>
