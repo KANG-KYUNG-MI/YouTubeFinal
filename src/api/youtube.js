@@ -8,8 +8,6 @@ export default class YouTube{
         return keyword? this.searchByKeyword(keyword) : this.mostPopular();
     }
 
-   
-
     async searchByKeyword(keyword){
         return this.apiClient.getSearch(
           {params: {
