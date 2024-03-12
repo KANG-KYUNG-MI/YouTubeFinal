@@ -6,24 +6,24 @@ import ChannelInfo from '../components/ChannelInfo';
 export default function VideoDetail() {
 
     const{state:{video}}= useLocation();
-    const {title, description, channelId, chanelTitle} = video.snippet;
+    const {title, description, channelId, channelTitle} = video.snippet;
 
     return (
-    <section>
-      <article>
+    <section className='flex flex-col lg:flex-row'>
+      <article className='basis-4/6'>
          <iframe id="player" type="text/html" width="100%" height="640" 
          src={`http://www.youtube.com/embed/${video.id}`} frameborder="0"
          title='title'/>
 
-         <div>
-           <h2 className='font-semibold m-10'>{title}</h2>
-           <ChannelInfo id={channelId} name={chanelTitle}/>
-           <pre className=''>{description}</pre>
+         <div className='p-8'>
+           <h2 className='font-bold'>{title}</h2>
+           <ChannelInfo id={channelId} name={channelTitle}/>
+           <pre className='whitespace-pre-wrap'>{description}</pre>
          </div>
       </article>
 
-   <section>
-    < RelatedVideos key={video.id} video={video}/>
+   <section className='basis-2/6'>
+    < RelatedVideos/>
    </section>
         </section>
    

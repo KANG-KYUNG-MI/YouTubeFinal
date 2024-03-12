@@ -15,7 +15,7 @@ export default function Navbar() {
         <header className='w-full flex p-4 text-2xl border-b border-zinc-600 mb-4'>
             <Link to='/' className='flex  items-center'>
             <FaYoutube className='text-4xl text-brand'/>
-            <h1 className='text-3xl ml-4'>You Tube</h1>
+            <h1 className='text-2xl ml-4'>YouTube</h1>
             </Link>
        
             <form className='w-full flex justify-center' 
